@@ -14,11 +14,11 @@ from telegram.ext import (
     filters,
 )
 
-gc = gspread.service_account(filename='C:/Users/machi/Downloads/testing-survey-444312-a677aed68d20.json')
+gc = gspread.service_account(filename='YOUR GOOGLE CLOUD API JSON KEY')
 sh = gc.open("TestSurveyTeachers")
 worksheet = sh.get_worksheet(0)
 
-TOKEN="7240019257:AAFgYlfSbjEJIJ64RcKn3pDJX8zjZydpCVo"
+TOKEN="YOUR BOT TOKEN"
 
 date = datetime.now().isoformat()
 
